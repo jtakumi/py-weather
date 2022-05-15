@@ -1,0 +1,21 @@
+C:\Users\Takum\programing\py-weather\weather.py:2: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+
+#githubへaddからpushまでを自動化
+
+[w1 0996edb] auto:22-05-15
+ 2 files changed, 406 insertions(+), 265 deletions(-)
+ rewrite weather22-05-15.csv (89%)
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 5.38 KiB | 1.79 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+
+#py-weatherのリポジトリにpush(branch=w1)
+To https://github.com/jtakumi/py-weather.git
+   4553273..0996edb  w1 -> w1
+
+finish

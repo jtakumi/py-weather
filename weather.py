@@ -160,13 +160,3 @@ def get_info():
 
 if __name__=='__main__':
     main()
-
-#gitを操作してpushまでやる
-os.system('git add .')
-#今日の日付とメッセージを結合させてcommit
-gm='git commit -m auto:'+ d1
-os.system(gm)
-os.system('git push origin w1')
-
-
-print('finish')

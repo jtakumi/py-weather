@@ -10,6 +10,7 @@ https://note.com/financedog/n/n08a01a502a5b#7172ae1e-448e-4d28-bd79-fa34af53243b
 #この関数でweather.pyを呼び出す
 def work():
     import weather
+    weather.main()
     print("running")
     #今日の日付を文字列に変換する
     today=datetime.date.today()

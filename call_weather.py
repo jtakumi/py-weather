@@ -5,6 +5,7 @@ import datetime
 """
 参考サイト
 https://note.com/financedog/n/n08a01a502a5b#7172ae1e-448e-4d28-bd79-fa34af53243b
+https://qiita.com/ume1126/items/c1be49cc9ad5553ecc78
 """
 
 #この関数でweather.pyを呼び出す
@@ -27,6 +28,7 @@ def work():
     os.system('git push origin w1')
     print('finish')
 
+#実際に呼び出されるのはこの関数
 def main():
     work()
 

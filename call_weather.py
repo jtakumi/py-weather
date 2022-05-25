@@ -21,11 +21,14 @@ def work():
     参考サイト
     https://noitalog.tokyo/python-git-push/
     """
+    fname='weather' + d1 + '.csv'
+    move='move '+ fname + ' ./weather_daily'
+    os.system(move)
     os.system('git add .')
     #今日の日付とメッセージを結合させてcommit
     gm='git commit -m auto:'+ d1
     os.system(gm)
-    os.system('git push origin w1')
+    os.system('git push origin w2')
     print('finish')
 
 #実際に呼び出されるのはこの関数

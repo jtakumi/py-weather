@@ -28,7 +28,7 @@ def work():
     #今日の日付とメッセージを結合させてcommit
     gm='git commit -m auto:'+ d1
     os.system(gm)
-    os.system('git push origin w1')
+    os.system('git push origin w2')
     print('finish')
 
 #実際に呼び出されるのはこの関数

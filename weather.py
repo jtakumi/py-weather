@@ -81,7 +81,7 @@ def main():
 
 #csvを作るなり
 def make_csv():
-    with open(fname,'w',encoding='utf-8') as wf:
+    with open(fname,'w',encoding='utf-8-sig') as wf:
         #開業まで書きます
         writer=csv.writer(wf,lineterminator='\n')
         #ヘッダーを書き出す

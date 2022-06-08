@@ -69,7 +69,7 @@ area_dic={'北海道/釧路':'014100',
 today=datetime.date.today()
 d1=today.strftime("%y-%m-%d")
 #今日の日付を取得してファイル名として結合
-fname="weather" + d1 + ".csv"
+fname="./weather_daily/weather" + d1 + ".csv"
 
 #csvのヘッダー
 header=['都道府県','データ配信元','報告日時',
@@ -81,7 +81,7 @@ def main():
 
 #csvを作るなり
 def make_csv():
-    with open(fname,'w',encoding='utf-8') as wf:
+    with open(fname,'w',encoding='utf-8-sig') as wf:
         #開業まで書きます
         writer=csv.writer(wf,lineterminator='\n')
         #ヘッダーを書き出す

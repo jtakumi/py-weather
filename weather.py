@@ -78,6 +78,7 @@ header=['都道府県','データ配信元','報告日時',
 #実行する関数
 def main():
     make_csv()
+    git()
 
 #csvを作るなり
 def make_csv():
@@ -157,6 +158,15 @@ def get_info():
 
                             write_lists.append(write_list)
     return write_lists
+
+def git():
+    os.system('git add .')
+    td=datetime.date.today()
+    d1=td.strftime('%y-%m-%d')
+    cm='git commit -m ' + d1
+    os.system(cm)
+    os.system('git push origin w2')
+
 
 if __name__=='__main__':
     main()
